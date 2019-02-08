@@ -45,9 +45,9 @@ class FashionMNISTDataset(Dataset):
         return (item, label)
 
 
-train_dataset = FashionMNISTDataset(csv_file ='fashion-mnist_train.csv')
+train_dataset = FashionMNISTDataset(csv_file ='fashion-mnist_train1.csv')
 test_dataset = FashionMNISTDataset(csv_file ='fashion-mnist_test.csv')
-data = pd.read_csv('fashion-mnist_train.csv');
+data = pd.read_csv('fashion-mnist_train1.csv');
 
 batch_size = 100
 train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
